@@ -6,10 +6,10 @@ UENUM(BlueprintType)
 enum class ETresItemDefCampItem : uint8 {
     NOTHING,
     TENT UMETA(DisplayName = "Tent"),
-    POWERUP UMETA(DisplayName = "Power Up"),
-    MAGICUP UMETA(DisplayName = "Magic Up"),
-    GUARDUP UMETA(DisplayName = "Guard Up"),
-    APUP UMETA(DisplayName = "AP Up"),
+    POWERUP UMETA(DisplayName = "Strength Boost"),
+    MAGICUP UMETA(DisplayName = "Magic Boost"),
+    GUARDUP UMETA(DisplayName = "Defense Boost"),
+    APUP UMETA(DisplayName = "AP Boost"),
     _MAX = 0x8,
 };
 
