@@ -2,7 +2,7 @@
 	"TargetName" : "TresGameEditor",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "82f8a937-d553-4a5c-b87b-efab335b40d9",
+	"BuildId" : "e070a51d-26f2-4b4f-8049-1aaa0d71d274",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -4269,6 +4269,54 @@
 			"Type" : "ImportLibrary"
 		},
 		{
+			"Path" : "$(EngineDir)/Binaries/Win64/Linux/UE4Editor-LinuxTargetPlatform.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/Win64/Linux/UE4Editor-LinuxTargetPlatform.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/Linux/UE4Editor-LinuxTargetPlatform.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/Win64/Linux/UE4Editor-LinuxNoEditorTargetPlatform.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/Win64/Linux/UE4Editor-LinuxNoEditorTargetPlatform.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/Linux/UE4Editor-LinuxNoEditorTargetPlatform.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/Win64/Linux/UE4Editor-LinuxClientTargetPlatform.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/Win64/Linux/UE4Editor-LinuxClientTargetPlatform.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/Linux/UE4Editor-LinuxClientTargetPlatform.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/Win64/Linux/UE4Editor-LinuxServerTargetPlatform.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/Win64/Linux/UE4Editor-LinuxServerTargetPlatform.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/Linux/UE4Editor-LinuxServerTargetPlatform.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
 			"Path" : "$(EngineDir)/Binaries/Win64/UE4Editor-Engine.dll",
 			"Type" : "DynamicLibrary"
 		},
@@ -4646,6 +4694,10 @@
 		},
 		{
 			"Path" : "$(EngineDir)/Binaries/Win64/HTML5/UE4Editor.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/Win64/Linux/UE4Editor.modules",
 			"Type" : "RequiredResource"
 		}
 	],
