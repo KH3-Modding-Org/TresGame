@@ -1,0 +1,2742 @@
+{
+	"TargetName" : "TresGame",
+	"Platform" : "Win64",
+	"Configuration" : "Shipping",
+	"BuildId" : "f7c4b9ce-74d2-4811-9849-5a0f86ff4cce",
+	"Version" : 
+	{
+		"MajorVersion" : 4,
+		"MinorVersion" : 17,
+		"PatchVersion" : 2,
+		"Changelist" : 0,
+		"CompatibleChangelist" : 3573198,
+		"IsLicenseeVersion" : 0,
+		"IsPromotedBuild" : 1,
+		"BranchName" : ""
+	},
+	"BuildProducts" :
+	[
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Win64-Shipping.exe",
+			"Type" : "Executable"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/RuntimePhysXCooking/Binaries/Win64/TresGame-RuntimePhysXCooking-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/RuntimePhysXCooking/Binaries/Win64/TresGame-RuntimePhysXCooking-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/RuntimePhysXCooking/Intermediate/Build/Win64/TresGame/Shipping/TresGame-RuntimePhysXCooking-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/HoudiniEngine/Binaries/Win64/TresGame-HoudiniEngineRuntime-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/HoudiniEngine/Binaries/Win64/TresGame-HoudiniEngineRuntime-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/HoudiniEngine/Intermediate/Build/Win64/TresGame/Shipping/TresGame-HoudiniEngineRuntime-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/Analytics/SQEX_OnlineSuiteTelemetry/Binaries/Win64/TresGame-OSTelemetry-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/Analytics/SQEX_OnlineSuiteTelemetry/Binaries/Win64/TresGame-OSTelemetry-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/Analytics/SQEX_OnlineSuiteTelemetry/Intermediate/Build/Win64/TresGame/Shipping/TresGame-OSTelemetry-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Binaries/Win64/TresGame-AnalyticsBlueprintLibrary-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Binaries/Win64/TresGame-AnalyticsBlueprintLibrary-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Intermediate/Build/Win64/TresGame/Shipping/TresGame-AnalyticsBlueprintLibrary-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystemEOS_Tres/Binaries/Win64/TresGame-OnlineSubsystemEOS_Tres-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystemEOS_Tres/Binaries/Win64/TresGame-OnlineSubsystemEOS_Tres-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystemEOS_Tres/Intermediate/Build/Win64/TresGame/Shipping/TresGame-OnlineSubsystemEOS_Tres-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystem/Binaries/Win64/TresGame-OnlineSubsystem-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystem/Binaries/Win64/TresGame-OnlineSubsystem-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystem/Intermediate/Build/Win64/TresGame/Shipping/TresGame-OnlineSubsystem-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystemUtils/Binaries/Win64/TresGame-OnlineSubsystemUtils-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystemUtils/Binaries/Win64/TresGame-OnlineSubsystemUtils-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystemUtils/Intermediate/Build/Win64/TresGame/Shipping/TresGame-OnlineSubsystemUtils-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/DirectInput/Binaries/Win64/TresGame-DirectInput-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/DirectInput/Binaries/Win64/TresGame-DirectInput-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/DirectInput/Intermediate/Build/Win64/TresGame/Shipping/TresGame-DirectInput-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Media/WmfMedia/Binaries/Win64/TresGame-WmfMedia-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Media/WmfMedia/Binaries/Win64/TresGame-WmfMedia-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Media/WmfMedia/Intermediate/Build/Win64/TresGame/Shipping/TresGame-WmfMedia-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Media/WmfMedia/Binaries/Win64/TresGame-WmfMediaFactory-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Media/WmfMedia/Binaries/Win64/TresGame-WmfMediaFactory-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Media/WmfMedia/Intermediate/Build/Win64/TresGame/Shipping/TresGame-WmfMediaFactory-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Media/AvfMedia/Binaries/Win64/TresGame-AvfMediaFactory-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Media/AvfMedia/Binaries/Win64/TresGame-AvfMediaFactory-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Media/AvfMedia/Intermediate/Build/Win64/TresGame/Shipping/TresGame-AvfMediaFactory-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/WindowsMoviePlayer/Binaries/Win64/TresGame-WindowsMoviePlayer-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/WindowsMoviePlayer/Binaries/Win64/TresGame-WindowsMoviePlayer-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/WindowsMoviePlayer/Intermediate/Build/Win64/TresGame/Shipping/TresGame-WindowsMoviePlayer-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/Mercuna/Binaries/Win64/TresGame-Mercuna-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/Mercuna/Binaries/Win64/TresGame-Mercuna-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/Mercuna/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Mercuna-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/Mercuna/Binaries/Win64/TresGame-Mercuna3DMovement-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/Mercuna/Binaries/Win64/TresGame-Mercuna3DMovement-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/Mercuna/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Mercuna3DMovement-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/Runtime/CriWare/CriWare/Binaries/Win64/TresGame-CriWareRuntime-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/Runtime/CriWare/CriWare/Binaries/Win64/TresGame-CriWareRuntime-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/Runtime/CriWare/CriWare/Intermediate/Build/Win64/TresGame/Shipping/TresGame-CriWareRuntime-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/SQEX/SQEXSEAD/Binaries/Win64/TresGame-SQEXSEAD-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/SQEX/SQEXSEAD/Binaries/Win64/TresGame-SQEXSEAD-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/SQEX/SQEXSEAD/Intermediate/Build/Win64/TresGame/Shipping/TresGame-SQEXSEAD-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/2D/Paper2D/Binaries/Win64/TresGame-Paper2D-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/2D/Paper2D/Binaries/Win64/TresGame-Paper2D-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/2D/Paper2D/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Paper2D-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Blendables/LightPropagationVolume/Binaries/Win64/TresGame-LightPropagationVolumeRuntime-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Blendables/LightPropagationVolume/Binaries/Win64/TresGame-LightPropagationVolumeRuntime-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Blendables/LightPropagationVolume/Intermediate/Build/Win64/TresGame/Shipping/TresGame-LightPropagationVolumeRuntime-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Editor/FacialAnimation/Binaries/Win64/TresGame-FacialAnimation-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Editor/FacialAnimation/Binaries/Win64/TresGame-FacialAnimation-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Editor/FacialAnimation/Intermediate/Build/Win64/TresGame/Shipping/TresGame-FacialAnimation-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Experimental/CharacterAI/Binaries/Win64/TresGame-CharacterAI-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Experimental/CharacterAI/Binaries/Win64/TresGame-CharacterAI-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Experimental/CharacterAI/Intermediate/Build/Win64/TresGame/Shipping/TresGame-CharacterAI-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Experimental/HTML5Networking/Binaries/Win64/TresGame-HTML5Networking-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Experimental/HTML5Networking/Binaries/Win64/TresGame-HTML5Networking-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Experimental/HTML5Networking/Intermediate/Build/Win64/TresGame/Shipping/TresGame-HTML5Networking-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Messaging/TcpMessaging/Binaries/Win64/TresGame-TcpMessaging-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Messaging/TcpMessaging/Binaries/Win64/TresGame-TcpMessaging-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Messaging/TcpMessaging/Intermediate/Build/Win64/TresGame/Shipping/TresGame-TcpMessaging-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystemNull/Binaries/Win64/TresGame-OnlineSubsystemNull-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystemNull/Binaries/Win64/TresGame-OnlineSubsystemNull-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystemNull/Intermediate/Build/Win64/TresGame/Shipping/TresGame-OnlineSubsystemNull-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ArchVisCharacter/Binaries/Win64/TresGame-ArchVisCharacter-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ArchVisCharacter/Binaries/Win64/TresGame-ArchVisCharacter-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ArchVisCharacter/Intermediate/Build/Win64/TresGame/Shipping/TresGame-ArchVisCharacter-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/CableComponent/Binaries/Win64/TresGame-CableComponent-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/CableComponent/Binaries/Win64/TresGame-CableComponent-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/CableComponent/Intermediate/Build/Win64/TresGame/Shipping/TresGame-CableComponent-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/CustomMeshComponent/Binaries/Win64/TresGame-CustomMeshComponent-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/CustomMeshComponent/Binaries/Win64/TresGame-CustomMeshComponent-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/CustomMeshComponent/Intermediate/Build/Win64/TresGame/Shipping/TresGame-CustomMeshComponent-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ExampleDeviceProfileSelector/Binaries/Win64/TresGame-ExampleDeviceProfileSelector-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ExampleDeviceProfileSelector/Binaries/Win64/TresGame-ExampleDeviceProfileSelector-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ExampleDeviceProfileSelector/Intermediate/Build/Win64/TresGame/Shipping/TresGame-ExampleDeviceProfileSelector-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ImmediatePhysics/Binaries/Win64/TresGame-ImmediatePhysics-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ImmediatePhysics/Binaries/Win64/TresGame-ImmediatePhysics-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ImmediatePhysics/Intermediate/Build/Win64/TresGame/Shipping/TresGame-ImmediatePhysics-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ProceduralMeshComponent/Binaries/Win64/TresGame-ProceduralMeshComponent-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ProceduralMeshComponent/Binaries/Win64/TresGame-ProceduralMeshComponent-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ProceduralMeshComponent/Intermediate/Build/Win64/TresGame/Shipping/TresGame-ProceduralMeshComponent-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-ActorSequence-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-ActorSequence-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-ActorSequence-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-BonamikRt-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-BonamikRt-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-BonamikRt-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-ClothingSystemRuntime-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-ClothingSystemRuntime-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-ClothingSystemRuntime-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-GeometryCache-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-GeometryCache-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-GeometryCache-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-KBDRt-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-KBDRt-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-KBDRt-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-KineDriverRt-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-KineDriverRt-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-KineDriverRt-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Niagara-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Niagara-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Niagara-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-ScaleformUI-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-ScaleformUI-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-ScaleformUI-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-TresGame-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-TresGame-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-TresGame-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Core-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Core-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Core-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Json-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Json-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Json-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Projects-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Projects-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Projects-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-CoreUObject-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-CoreUObject-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-CoreUObject-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-InputCore-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-InputCore-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-InputCore-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-SlateCore-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-SlateCore-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-SlateCore-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-ImageWrapper-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-ImageWrapper-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-ImageWrapper-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Slate-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Slate-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Slate-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AppFramework-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AppFramework-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-AppFramework-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-SandboxFile-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-SandboxFile-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-SandboxFile-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Sockets-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Sockets-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Sockets-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Networking-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Networking-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Networking-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-NullDrv-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-NullDrv-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-NullDrv-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-ShaderCore-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-ShaderCore-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-ShaderCore-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-UtilityShaders-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-UtilityShaders-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-UtilityShaders-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-D3D11RHI-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-D3D11RHI-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-D3D11RHI-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-D3D12RHI-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-D3D12RHI-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-D3D12RHI-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-MaterialShaderQualitySettings-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-MaterialShaderQualitySettings-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-MaterialShaderQualitySettings-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Renderer-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Renderer-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Renderer-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Analytics-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Analytics-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Analytics-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-HeadMountedDisplay-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-HeadMountedDisplay-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-HeadMountedDisplay-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-VulkanRHI-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-VulkanRHI-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-VulkanRHI-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-OpenGLDrv-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-OpenGLDrv-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-OpenGLDrv-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-RHI-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-RHI-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-RHI-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-RenderCore-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-RenderCore-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-RenderCore-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Foliage-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Foliage-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Foliage-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Landscape-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Landscape-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Landscape-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-SSL-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-SSL-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-SSL-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-HTTP-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-HTTP-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-HTTP-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-MovieScene-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-MovieScene-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-MovieScene-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AnimationCore-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AnimationCore-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-AnimationCore-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AnimGraphRuntime-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AnimGraphRuntime-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-AnimGraphRuntime-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-MovieSceneTracks-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-MovieSceneTracks-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-MovieSceneTracks-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-SlateRHIRenderer-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-SlateRHIRenderer-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-SlateRHIRenderer-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-UMG-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-UMG-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-UMG-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-CinematicCamera-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-CinematicCamera-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-CinematicCamera-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AnalyticsET-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AnalyticsET-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-AnalyticsET-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Navmesh-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Navmesh-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Navmesh-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Messaging-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Messaging-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Messaging-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AssetRegistry-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AssetRegistry-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-AssetRegistry-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-EngineMessages-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-EngineMessages-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-EngineMessages-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-EngineSettings-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-EngineSettings-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-EngineSettings-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-SynthBenchmark-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-SynthBenchmark-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-SynthBenchmark-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-GameplayTags-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-GameplayTags-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-GameplayTags-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-GameplayTasks-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-GameplayTasks-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-GameplayTasks-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AIModule-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AIModule-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-AIModule-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-DatabaseSupport-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-DatabaseSupport-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-DatabaseSupport-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-ReliabilityHandlerComponent-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-ReliabilityHandlerComponent-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-ReliabilityHandlerComponent-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-PacketHandler-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-PacketHandler-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-PacketHandler-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-HardwareSurvey-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-HardwareSurvey-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-HardwareSurvey-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-ClothingSystemRuntimeInterface-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-ClothingSystemRuntimeInterface-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-ClothingSystemRuntimeInterface-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AVIWriter-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AVIWriter-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-AVIWriter-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-JsonUtilities-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-JsonUtilities-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-JsonUtilities-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-LevelSequence-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-LevelSequence-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-LevelSequence-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-MovieSceneCapture-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-MovieSceneCapture-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-MovieSceneCapture-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-MRMesh-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-MRMesh-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-MRMesh-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-MoviePlayer-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-MoviePlayer-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-MoviePlayer-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-StreamingPauseRendering-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-StreamingPauseRendering-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-StreamingPauseRendering-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-VectorVM-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-VectorVM-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-VectorVM-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-SlateNullRenderer-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-SlateNullRenderer-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-SlateNullRenderer-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-NetworkReplayStreaming-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-NetworkReplayStreaming-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-NetworkReplayStreaming-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-NullNetworkReplayStreaming-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-NullNetworkReplayStreaming-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-NullNetworkReplayStreaming-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-HttpNetworkReplayStreaming-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-HttpNetworkReplayStreaming-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-HttpNetworkReplayStreaming-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Advertising-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Advertising-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Advertising-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-PhysXCooking-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-PhysXCooking-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-PhysXCooking-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Engine-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Engine-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Engine-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Media-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Media-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Media-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-MediaUtils-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-MediaUtils-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-MediaUtils-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-MediaAssets-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-MediaAssets-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-MediaAssets-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-PakFile-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-PakFile-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-PakFile-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Serialization-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Serialization-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Serialization-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Overlay-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Overlay-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Overlay-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-SessionMessages-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-SessionMessages-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-SessionMessages-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-SessionServices-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-SessionServices-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-SessionServices-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-XAudio2-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-XAudio2-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-XAudio2-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AudioMixer-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AudioMixer-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-AudioMixer-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AudioMixerXAudio2-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-AudioMixerXAudio2-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-AudioMixerXAudio2-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-ImageCore-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-ImageCore-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-ImageCore-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Voice-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Voice-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-Voice-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-InputDevice-Win64-Shipping.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-InputDevice-Win64-Shipping.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/TresGame/Shipping/TresGame-InputDevice-Win64-Shipping.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/RuntimePhysXCooking/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/HoudiniEngine/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/Analytics/SQEX_OnlineSuiteTelemetry/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystemEOS_Tres/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystem/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystemUtils/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/DirectInput/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Media/WmfMedia/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Media/AvfMedia/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/WindowsMoviePlayer/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/Mercuna/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/Runtime/CriWare/CriWare/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/SQEX/SQEXSEAD/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/2D/Paper2D/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Blendables/LightPropagationVolume/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Editor/FacialAnimation/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Experimental/CharacterAI/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Experimental/HTML5Networking/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Messaging/TcpMessaging/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystemNull/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ArchVisCharacter/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/CableComponent/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/CustomMeshComponent/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ExampleDeviceProfileSelector/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ImmediatePhysics/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ProceduralMeshComponent/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/TresGame-Win64-Shipping.modules",
+			"Type" : "RequiredResource"
+		}
+	],
+	"RuntimeDependencies" :
+	[
+		{
+			"Path" : "$(ProjectDir)/TresGame.uproject",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/InstanceTool/InstanceTool.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/RuntimePhysXCooking/RuntimePhysXCooking.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/HoudiniEngine/HoudiniEngine.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Editor/AssetManagerEditor/AssetManagerEditor.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/Analytics/SQEX_OnlineSuiteTelemetry/OnlineSuiteTelemetry.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/AnalyticsBlueprintLibrary.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystemEOS_Tres/OnlineSubsystemEOS_Tres.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystem/OnlineSubsystem.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystemUtils/OnlineSubsystemUtils.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/DirectInput/DirectInput.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Media/WmfMedia/WmfMedia.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Media/AvfMedia/AvfMedia.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/WindowsMoviePlayer/WindowsMoviePlayer.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/Mercuna/Mercuna.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/Runtime/CriWare/CriWare/CriWare.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/SQEX/SQEXSEAD/SQEXSEAD.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/EnginePlugins/SQEX/SQEX_SplineEdtor/SQEX_SplineEditor.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/2D/Paper2D/Paper2D.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Blendables/LightPropagationVolume/LightPropagationVolume.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Editor/FacialAnimation/FacialAnimation.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Experimental/CharacterAI/CharacterAI.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Experimental/HTML5Networking/HTML5Networking.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Messaging/TcpMessaging/TcpMessaging.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystemNull/OnlineSubsystemNull.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ArchVisCharacter/ArchVisCharacter.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/CableComponent/CableComponent.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/CustomMeshComponent/CustomMeshComponent.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ExampleDeviceProfileSelector/ExampleDeviceProfileSelector.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ImmediatePhysics/ImmediatePhysics.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/ProceduralMeshComponent/ProceduralMeshComponent.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Checkerboard.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/BoxShadow.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Button.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Button_Disabled.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Button_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Button_Pressed.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Check.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/CheckBox.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/CheckBox_Checked.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/CheckBox_Checked_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/CheckBox_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/CheckBox_Undetermined.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/CheckBox_Undetermined_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Checker.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Circle.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ColorGradingWheel.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ColorPicker_Mode_16x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ColorPicker_Separator.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ColorPicker_SliderHandle.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ColorSpectrum.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ColorWheel.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ColumnHeader.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ColumnHeaderMenuButton_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ColumnHeaderMenuButton_Normal.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ColumnHeader_Arrow.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ColumnHeader_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ComboArrow.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/CursorPing.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/DebugBorder.PNG",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Delimiter.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/DownArrow.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/DropZoneIndicator_Above.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/DropZoneIndicator_Below.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/DropZoneIndicator_Onto.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/EditableTextSelectionBackground.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/EventMessage_Default.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ExpansionButton_CloseOverlay.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/GroupBorder.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/HeaderSplitterGrip.PNG",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/LastColumnHeader_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/NoiseBackground.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ProgressBar_Background.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ProgressBar_Fill.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ProgressBar_Marquee.PNG",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/RadioButton_SelectedBack_16x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/RadioButton_Selected_16x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/RadioButton_Unselected_16x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/RoundedSelection_16x.PNG",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Scrollbar_Background_Horizontal.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Scrollbar_Background_Vertical.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Scrollbar_Thumb.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ScrollBorderShadowBottom.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ScrollBorderShadowTop.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ScrollBoxShadowBottom.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ScrollBoxShadowLeft.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ScrollBoxShadowRight.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/ScrollBoxShadowTop.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/SearchGlass.PNG",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Selection.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Selector.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Separator.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/SmallCheck.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/SmallCheckBox.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/SmallCheckBox_Checked.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/SmallCheckBox_Checked_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/SmallCheckBox_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/SmallCheckBox_Undetermined.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/SmallCheckBox_Undetermined_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/SortDownArrow.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/SortDownArrows.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/SortUpArrow.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/SortUpArrows.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/SpinArrows.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Spinbox.PNG",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Spinbox_Fill.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Spinbox_Fill_Dark.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Spinbox_Fill_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Spinbox_Fill_Hovered_Dark.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Spinbox_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/SplitterHandleHighlight.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/SubmenuArrow.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/TableViewHeader.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/TableViewMajorColumn.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/TextBlockHighlightShape.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/TextBlockHighlightShape_Empty.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/TextBox.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/TextBoxLabelBorder.PNG",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/TextBox_Dark.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/TextBox_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/TextBox_Hovered_Dark.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/TextBox_ReadOnly.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/TextBox_Special.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/TextBox_Special_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Throbber_Piece.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/TreeArrow_Collapsed.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/TreeArrow_Collapsed_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/TreeArrow_Expanded.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/TreeArrow_Expanded_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/UpArrow.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/VerticalBoxDragIndicator.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/VolumeControl_High.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/VolumeControl_Low.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/VolumeControl_Mid.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/VolumeControl_Muted.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/VolumeControl_Off.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/WhiteGroupBorder.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/X.PNG",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowBackground.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowBorder.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowButton_Close_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowButton_Close_Normal.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowButton_Close_Pressed.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowButton_Maximize_Disabled.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowButton_Maximize_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowButton_Maximize_Normal.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowButton_Maximize_Pressed.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowButton_Minimize_Disabled.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowButton_Minimize_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowButton_Minimize_Normal.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowButton_Minimize_Pressed.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowButton_Restore_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowButton_Restore_Normal.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowButton_Restore_Pressed.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowOutline.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowTitle.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowTitle_Flashing.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Common/Window/WindowTitle_Inactive.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/CrashTracker/MouseCursor.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/CrashTracker/Record.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/AppTabContentArea.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/AppTabWellSeparator.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/AppTab_Active.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/AppTab_ColorOverlay.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/AppTab_ColorOverlayIcon.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/AppTab_Foreground.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/AppTab_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/AppTab_Inactive.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/CloseApp_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/CloseApp_Normal.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/CloseApp_Pressed.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/DockingIndicator_Center.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/OuterDockingIndicator.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/ShowTabwellButton_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/ShowTabwellButton_Normal.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/ShowTabwellButton_Pressed.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/TabContentArea.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/TabWellSeparator.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/Tab_Active.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/Tab_ColorOverlay.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/Tab_ColorOverlayIcon.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/Tab_Foreground.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/Tab_Hovered.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Docking/Tab_Inactive.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Fonts/DroidSans.tps",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Fonts/DroidSansFallback.ttf",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Fonts/DroidSansMono.ttf",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Fonts/NanumGothic.tps",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Fonts/NanumGothic.ttf",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Fonts/Noto.tps",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Fonts/NotoNaskhArabicUI-Regular.ttf",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Fonts/Roboto-Bold.ttf",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Fonts/Roboto-Light.ttf",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Fonts/Roboto-Regular.ttf",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Fonts/Roboto.tps",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/BackIcon.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/Cross_12x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/cursor_cardinal_cross.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/cursor_grab.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/DefaultAppIcon.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/denied_16x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/ellipsis_12x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/Empty_14x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/eyedropper_16px.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/icon_Downloads_16x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/icon_error_16x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/icon_generic_toolbar.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/icon_help_16x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/icon_info_16x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/icon_redo_16px.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/icon_tab_toolbar_16px.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/icon_tab_WidgetReflector_16x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/icon_tab_WidgetReflector_40x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/icon_undo_16px.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/icon_warning_16x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/NextIcon.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/notificationlist_fail.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/notificationlist_success.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/PlusSymbol_12x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/toolbar_expand_16x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/TrashCan.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/TrashCan_Small.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/Edit/icon_Edit_Copy_16x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/Edit/icon_Edit_Cut_16x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/Edit/icon_Edit_Delete_16x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/Edit/icon_Edit_Duplicate_16x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Icons/Edit/icon_Edit_Paste_16x.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/MessageLog/Log_Error.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/MessageLog/Log_Note.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/MessageLog/Log_Warning.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Old/Border.PNG",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Old/Button.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Old/DashedBorder.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Old/HyperlinkDotted.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Old/HyperlinkUnderline.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Old/Menu_Background.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Old/Menu_Background_Inverted_Border_Bold.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Old/Notification_Border_Flash.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Old/ToolBar_Background.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Old/ToolTip_Background.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Old/ToolTip_BrightBackground.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Old/White.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Testing/BrushWireframe.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Testing/DefaultPawn_16px.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Testing/FlatColorSquare.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Testing/GammaReference.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Testing/Hyperlink.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Testing/Lit.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Testing/NewLevelBlank.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Testing/TestRotation.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Testing/UE4Icon.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Testing/Unlit.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Testing/Wireframe.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Testing/Fonts/Roboto-BlackItalic.ttf",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Testing/Fonts/Roboto-BoldItalic.ttf",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Testing/Fonts/Roboto-Italic.ttf",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Testing/Fonts/Roboto.tps",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Tutorials/TutorialBorder.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Content/Slate/Tutorials/TutorialShadow.png",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxFoundation_x64.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxFoundation_x64.pdb",
+			"Type" : "DebugNonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxPvdSDK_x64.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxPvdSDK_x64.pdb",
+			"Type" : "DebugNonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3_x64.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3_x64.pdb",
+			"Type" : "DebugNonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3Cooking_x64.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3Cooking_x64.pdb",
+			"Type" : "DebugNonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3Common_x64.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3Common_x64.pdb",
+			"Type" : "DebugNonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxFoundation_x64.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxPvdSDK_x64.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Clothing_x64.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Clothing_x64.pdb",
+			"Type" : "DebugNonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Destructible_x64.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Destructible_x64.pdb",
+			"Type" : "DebugNonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Legacy_x64.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Legacy_x64.pdb",
+			"Type" : "DebugNonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/ApexFramework_x64.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/ApexFramework_x64.pdb",
+			"Type" : "DebugNonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/NvCloth_x64.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/NvCloth_x64.pdb",
+			"Type" : "DebugNonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/ICU/icu4c-53_1/Win64/VS2015/icudt53.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/ICU/icu4c-53_1/Win64/VS2015/icuuc53.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/ICU/icu4c-53_1/Win64/VS2015/icuin53.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/ICU/icu4c-53_1/Win64/VS2015/icule53.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/ICU/icu4c-53_1/Win64/VS2015/iculx53.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/ICU/icu4c-53_1/Win64/VS2015/icuio53.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/NVIDIA/NVaftermath/Win64/GFSDK_Aftermath_Lib.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/Windows/DirectX/x64/WinPixEventRuntime.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3Cooking_x64.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3Cooking_x64.pdb",
+			"Type" : "DebugNonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/Ogg/Win64/VS2015/libogg_64.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbis_64.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbisfile_64.dll",
+			"Type" : "NonUFS"
+		}
+	],
+	"AdditionalProperties" :
+	[
+		{
+			"Name" : "SDK",
+			"Value" : "Not Applicable"
+		}
+	]
+}

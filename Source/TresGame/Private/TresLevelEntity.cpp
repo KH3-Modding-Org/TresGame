@@ -18,7 +18,13 @@ void ATresLevelEntity::DestorySelfWithActor() {
 
 void ATresLevelEntity::DestorySelf() {
 }
+/*
+void ATresLevelEntity::PostEditChangeProperty( FPropertyChangedEvent& PropertyChangedEvent ) 
+{
+	Super::PostEditChangeProperty(PropertyChangedEvent);
 
+}
+*/
 ATresLevelEntity::ATresLevelEntity(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->m_ForceLazyLoad = false;
     this->TransformComponent = CreateDefaultSubobject<USceneComponent>(TEXT("TransformComponent0"));

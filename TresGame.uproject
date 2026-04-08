@@ -147,10 +147,6 @@
 			"Enabled": false
 		},
 		{
-			"Name": "MatineeToLevelSequence",
-			"Enabled": false
-		},
-		{
 			"Name": "GoogleCloudMessaging",
 			"Enabled": false
 		},
@@ -164,10 +160,6 @@
 		},
 		{
 			"Name": "UdpMessaging",
-			"Enabled": false
-		},
-		{
-			"Name": "LevelSequenceEditor",
 			"Enabled": false
 		},
 		{

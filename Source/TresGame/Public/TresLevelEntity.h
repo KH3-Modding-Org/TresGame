@@ -21,6 +21,22 @@ class UTresLevelEntityManager;
 UCLASS(Blueprintable)
 class TRESGAME_API ATresLevelEntity : public AActor {
     GENERATED_BODY()
+
+    /*
+	//~ Begin UObject Interface
+	virtual void PostLoad() override;
+	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
+	virtual void PostEditUndo() override;
+	virtual bool Modify(bool bAlwaysMarkDirty = true) override;
+	//~ End UObject Interface
+
+	//~ Begin AActor Interface
+	virtual void PostActorCreated() override;
+	virtual void InvalidateLightingCacheDetailed(bool bTranslationOnly) override;
+	virtual void PostEditMove(bool bFinished) override;
+	virtual void SetIsTemporarilyHiddenInEditor(bool bIsHidden) override;
+	//~ End AActor Interface
+	*/
 public:
 private:
     UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
