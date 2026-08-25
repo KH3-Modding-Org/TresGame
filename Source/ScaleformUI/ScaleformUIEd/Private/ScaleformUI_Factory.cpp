@@ -60,7 +60,8 @@ EReimportResult::Type UScaleformUI_Factory::Reimport(UObject* Obj)
 	USwfMovie* ImportedAsset = Cast<USwfMovie>(Obj);
 	if (!ImportedAsset) { return EReimportResult::Failed; }
 	const FString Filename = FPaths::ConvertRelativePathToFull(FPaths::GameDir(), ImportedAsset->SourceFile);
-	bool OutCanceled = false;
+	bool OutCanceled = false; 
+	TArray<FString> OldRef = ImportedAsset->ReferencedAssetNames;
 	if (FPaths::GetExtension(Filename).Equals(TEXT("gfx"), ESearchCase::IgnoreCase) || FPaths::GetExtension(Filename).Equals(TEXT("swf"), ESearchCase::IgnoreCase))
 	{
 		if (ImportObject(ImportedAsset->GetClass(), ImportedAsset->GetOuter(), *ImportedAsset->GetName(), RF_Public | RF_Standalone, Filename, nullptr, OutCanceled) != nullptr)
@@ -68,6 +69,8 @@ EReimportResult::Type UScaleformUI_Factory::Reimport(UObject* Obj)
 			ImportedAsset->Modify();
 			ImportedAsset->MarkPackageDirty();
 			ImportedAsset->SourceFileTimestamp = IFileManager::Get().GetTimeStamp(*UFactory::CurrentFilename).ToString();
+			ImportedAsset->ReferencedAssetNames = OldRef;
+			
 			return EReimportResult::Succeeded;
 		}
 		else
