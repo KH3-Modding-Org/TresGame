@@ -1,0 +1,9 @@
+{
+	"Changelist" : 0,
+	"BuildId" : "f7c4b9ce-74d2-4811-9849-5a0f86ff4cce",
+	"Modules" : 
+	{
+		"Mercuna" : "TresGame-Mercuna-Win64-Shipping.dll",
+		"Mercuna3DMovement" : "TresGame-Mercuna3DMovement-Win64-Shipping.dll"
+	}
+}

@@ -10,92 +10,6 @@
 
 #define LOCTEXT_NAMESPACE "AtomFactory"
 
-static uint8 BytesToUint8(const uint8* Data, int& Buffer)
-{
-	uint8 value = 0;
-	value |= Data[Buffer];
-	Buffer++;
-	return value;
-}
-static uint16 BytesToUint16(const uint8* Data, int& Buffer, bool bIsBigEndian)
-{
-	uint32 value = 0;
-	if (bIsBigEndian)
-	{
-		value |= Data[Buffer + 1];
-		value |= Data[Buffer] << 8;
-	}
-	else
-	{
-		value |= Data[Buffer + 1] << 8;
-		value |= Data[Buffer];
-	}
-	Buffer += 2;
-	return value;
-}
-static uint32 BytesToUint32(const uint8* Data, int& Buffer, bool bIsBigEndian)
-{
-	uint32 value = 0;
-	if (bIsBigEndian)
-	{
-		value |= Data[Buffer + 3];
-		value |= Data[Buffer + 2] << 8;
-		value |= Data[Buffer + 1] << 16;
-		value |= Data[Buffer] << 24;
-	}
-	else
-	{
-		value |= Data[Buffer + 3] << 24;
-		value |= Data[Buffer + 2] << 16;
-		value |= Data[Buffer + 1] << 8;
-		value |= Data[Buffer];
-	}
-	Buffer += 4;
-	return value;
-}
-static FString Uint8ToString(uint8 Input)
-{
-	uint8 Byte1 = Input;
-	FString CombinedString = BytesToString(&Byte1, 1);
-	CombinedString[0] = CombinedString[0] - 1;
-	return CombinedString;
-}
-static FString Uint16ToString(uint16 Input)
-{
-	uint8 Byte1 = Input;
-	uint8 Byte2 = Input >> 8;
-	FString CombinedString = BytesToString(&Byte1, 1) += BytesToString(&Byte2, 1);
-	CombinedString[0] = CombinedString[0] - 1;
-	CombinedString[1] = CombinedString[1] - 1;
-	return CombinedString;
-}
-static FString Uint32ToString(uint32 Input)
-{
-	uint8 Byte1 = Input;
-	uint8 Byte2 = Input >> 8;
-	uint8 Byte3 = Input >> 16;
-	uint8 Byte4 = Input >> 24;
-	FString CombinedString = BytesToString(&Byte1, 1) += BytesToString(&Byte2, 1) += BytesToString(&Byte3, 1) += BytesToString(&Byte4, 1);
-	for (int i = 0; i < CombinedString.Len(); i++) { CombinedString[i] = CombinedString[i] - 1; }
-	return CombinedString;
-}
-static FString ListOfBytesToString(const uint8* Input, int Count)
-{
-	FString NewString = BytesToString(Input, Count);
-	for (int i = 0; i < NewString.Len(); i++) { NewString[i] = NewString[i] - 1; }
-	return NewString;
-}
-static TArray<uint8> ReadBytes(const uint8* Input, int Index, int Count)
-{
-	TArray<uint8> ReturnedData;
-	while (Index < Count)
-	{
-		ReturnedData.Add(BytesToUint8(Input, Index));
-		Index++;
-	}
-	return ReturnedData;
-}
-
 struct FSabMabHeaderSection
 {
 	FString SectionName;
@@ -216,9 +130,10 @@ public:
 
 
 	TArray<FCriWareInfo> HCAArray;
-
+	/*
 	bool ReadAudioData(const uint8*& Buffer, const uint8* BufferEnd, TArray<uint8> SabMabDataArray, int32 SabMabDataSize, FString* ErrorMessage = NULL, bool InHeaderDataOnly = false, void** OutFormatHeader = NULL)
 	{
+
 		if (SabMabDataArray.GetData() <= 0)
 			return false;
 		const uint8* SabMabData = SabMabDataArray.GetData();
@@ -331,6 +246,7 @@ public:
 
 		return true;
 	}
+	*/
 };
 
 
@@ -414,67 +330,205 @@ USQEXSEADFactory::USQEXSEADFactory(const FObjectInitializer& ObjectInitializer) 
 static bool bSoundFactorySuppressImportOverwriteDialog = false;
 UObject* USQEXSEADFactory::FactoryCreateBinary(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, const TCHAR* Type, const uint8*& Buffer, const uint8* BufferEnd, FFeedbackContext* Warn, bool& bOutOperationCanceled)
 {
-	//SQEX DEPRECATED THE SOUND BANKS LATER IN DEVELOPMENT
+	TArray<UAudioComponent*> ComponentsToRestart;
+	FAudioDeviceManager* AudioDeviceManager = GEngine->GetAudioDeviceManager();
 
-	FString PackagePath = FPackageName::GetLongPackagePath(InParent->GetOutermost()->GetName());
+	bSoundFactorySuppressImportOverwriteDialog = false;
 
-	FByteBulkData RawData;
-	RawData.Lock(LOCK_READ_WRITE);
-	void* LockedData = RawData.Realloc(BufferEnd - Buffer);
-	FMemory::Memcpy(LockedData, Buffer, BufferEnd - Buffer);
-	RawData.Unlock();
-
-	TArray<uint8> TinyRawData;
-	TinyRawData.Empty(BufferEnd - Buffer);
-	TinyRawData.AddUninitialized(BufferEnd - Buffer);
-	FMemory::Memcpy(TinyRawData.GetData(), Buffer, TinyRawData.Num());
+	TArray<uint8> RawData;
+	RawData.Empty(BufferEnd - Buffer);
+	RawData.AddUninitialized(BufferEnd - Buffer);
+	FMemory::Memcpy(RawData.GetData(), Buffer, RawData.Num());
 
 	FString ErrorMessage;
-	FSEADAudioData FileInfo;
-	if (FileInfo.ReadAudioData(Buffer, BufferEnd, TinyRawData, TinyRawData.Num(), &ErrorMessage))
+	Warn->Logf(ELogVerbosity::Error, TEXT("Unable to read file '%s' _ %d"), Type, _tcscmp(Type, L"mab"));
+	FSabMabInfo FileInfo;
+
+	if (_tcscmp(Type, L"mab") == 0 || _tcscmp(Type, L"sab") == 0) // Got mab/sab file, no need to do anything extra, just store it inside RawAudioData
 	{
-		if (FileInfo.bIsSab)
+		if (FileInfo.ReadSabMabInfo(RawData.GetData(), RawData.Num(), &ErrorMessage))
 		{
-			USQEXSEADSound* SoundObject = FindSEADSound(*Name.ToString(), PackagePath);
-			if (SoundObject == nullptr)
+			/*if (*FileInfo.pBitsPerSample != 16)
 			{
-				SoundObject = NewObject<USQEXSEADSound>(InParent, Name, Flags);
+				Warn->Logf(ELogVerbosity::Error, TEXT("Currently, only 16 bit Sab/Mab files are supported (%s)."), *Name.ToString());
+				FEditorDelegates::OnAssetPostImport.Broadcast(this, nullptr);
+				return nullptr;
+			}*/
+
+			Warn->Logf(ELogVerbosity::Error, TEXT("Unable to read Sab/Mab file '%s' - \"%s\""), *Name.ToString(), *ErrorMessage);
+			Warn->Logf(ELogVerbosity::Error, TEXT("Header Chunk - numChunks: '%s'"), *FString::FromInt(FileInfo.HeaderChunk.numChunks));
+
+			for (int i = 0; i < FileInfo.TableElementChunk.Num(); i++)
+			{
+				Warn->Logf(ELogVerbosity::Error, TEXT("Header Section - SectionName: '%s'"), *Uint32ToString(FileInfo.TableElementChunk[i].id)); 
+			}
+			/*
+			for (int i = 0; i < FileInfo.Entries.Num(); i++)
+			{
+				/*
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - Entry Index: '%s'"), *FString::FromInt(FileInfo.Entries[i].EntryIndex));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - Channel Count: '%s'"), *FString::FromInt(FileInfo.Entries[i].ChannelCount));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - Codec: '%s'"), *FString::FromInt(FileInfo.Entries[i].Codec));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - ExtraDataId: '%s'"), *FString::FromInt(FileInfo.Entries[i].ExtraDataId));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - ExtraDataOffset: '%s'"), *FString::FromInt(FileInfo.Entries[i].ExtraDataOffset));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - ExtraDataSize: '%s'"), *FString::FromInt(FileInfo.Entries[i].ExtraDataSize));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - HcaHeaderSize: '%s'"), *FString::FromInt(FileInfo.Entries[i].HcaHeaderSize));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - HcaStreamSize: '%s'"), *FString::FromInt(FileInfo.Entries[i].HcaStreamSize));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - HcaStreamStartPosition: '%s'"), *FString::FromInt(FileInfo.Entries[i].HcaStreamStartPosition));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - HeaderPosition: '%s'"), *FString::FromInt(FileInfo.Entries[i].HeaderPosition));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - IsLooping: '%s'"), *FString::FromInt(FileInfo.Entries[i].IsLooping));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - LocalSectionOffset: '%s'"), *FString::FromInt(FileInfo.Entries[i].LocalSectionOffset));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - LoopStart: '%s'"), *FString::FromInt(FileInfo.Entries[i].LoopStart));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - LoopEnd: '%s'"), *FString::FromInt(FileInfo.Entries[i].LoopEnd));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - MaterialHeaderSize: '%s'"), *FString::FromInt(FileInfo.Entries[i].MaterialHeaderSize));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - MtrlNumber: '%s'"), *FString::FromInt(FileInfo.Entries[i].MtrlNumber));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - NoHcaHeaderExtraDataSize: '%s'"), *FString::FromInt(FileInfo.Entries[i].NoHcaHeaderExtraDataSize));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - NoHcaHeaderSize: '%s'"), *FString::FromInt(FileInfo.Entries[i].NoHcaHeaderSize));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - PositionOfOffsetFromMtrlSectionOffset: '%s'"), *FString::FromInt(FileInfo.Entries[i].PositionOfOffsetFromMtrlSectionOffset));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - SampleRate: '%s'"), *FString::FromInt(FileInfo.Entries[i].SampleRate));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - StreamPosition: '%s'"), *FString::FromInt(FileInfo.Entries[i].StreamPosition));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - StreamSize: '%s'"), *FString::FromInt(FileInfo.Entries[i].StreamSize));
+				Warn->Logf(ELogVerbosity::Error, TEXT("Material Entry - TrackEndPosition: '%s'"), *FString::FromInt(FileInfo.Entries[i].TrackEndPosition));
 			}
 
-			FByteBulkData RawDatas;
-			RawDatas.Lock(LOCK_READ_WRITE);
-			void* LockedDatas = RawDatas.Realloc(BufferEnd - Buffer);
-			FMemory::Memcpy(LockedDatas, Buffer, BufferEnd - Buffer);
-			RawDatas.Unlock();
+			for (int i = 0; i < FileInfo.MusicEntries.Num(); i++)
+			{
+				Warn->Logf(ELogVerbosity::Error, TEXT("Music Entry - Name: '%s'"), *FileInfo.MusicEntries[i].Name);
+				for (int z = 0; z < FileInfo.MusicEntries[i].Slices.Num(); z++)
+				{
+					Warn->Logf(ELogVerbosity::Error, TEXT("Music Slice - Name: '%s'"), *FileInfo.MusicEntries[i].Slices[z].Name);
+				}
+				for (int z = 0; z < FileInfo.MusicEntries[i].Modes.Num(); z++)
+				{
+					Warn->Logf(ELogVerbosity::Error, TEXT("Music Modes - Name: '%s'"), *FileInfo.MusicEntries[i].Modes[z].Name);
+				}
+			}
 
-			SoundObject->RawData.Lock(LOCK_READ_WRITE);
-			LockedDatas = SoundObject->RawData.Realloc(BufferEnd - Buffer);
-			FMemory::Memcpy(LockedDatas, Buffer, BufferEnd - Buffer);
-			SoundObject->RawData.Unlock();
-
-			return SoundObject;
+			for (int i = 0; i < FileInfo.Instruments.Num(); i++)
+			{
+				Warn->Logf(ELogVerbosity::Error, TEXT("Instrument - Name: '%s'"), *FileInfo.Instruments[i].Name);
+			}
+			*/
 		}
 		else
 		{
-			USQEXSEADMusic* MusicObject = FindSEADMusic(*Name.ToString(), PackagePath);
-			if (MusicObject == nullptr)
-			{
-				MusicObject = NewObject<USQEXSEADMusic>(InParent, Name, Flags);
-			}
-
-			FByteBulkData RawDatas;
-			RawDatas.Lock(LOCK_READ_WRITE);
-			void* LockedDatas = RawDatas.Realloc(BufferEnd - Buffer);
-			FMemory::Memcpy(LockedDatas, Buffer, BufferEnd - Buffer);
-			RawDatas.Unlock();
-
-			MusicObject->RawData.Lock(LOCK_READ_WRITE);
-			LockedDatas = MusicObject->RawData.Realloc(BufferEnd - Buffer);
-			FMemory::Memcpy(LockedDatas, Buffer, BufferEnd - Buffer);
-			MusicObject->RawData.Unlock();
-
-			return MusicObject;
+			Warn->Logf(ELogVerbosity::Error, TEXT("Unable to read Sab/Mab file '%s' - \"%s\""), *Name.ToString(), *ErrorMessage);
+			FEditorDelegates::OnAssetPostImport.Broadcast(this, nullptr);
+			return nullptr;
 		}
 	}
-	return nullptr;
+	else if (_tcscmp(Type, L"hca") == 0) // Got HCA, need to serialize mab/sab header and then append the HCA raw buffer onto it
+	{
+
+	}
+	else if (_tcscmp(Type, L"wav") == 0) // Got WAV, need to serialize mab/sab header and then encode it into HCA
+	{
+
+	}
+	USQEXSEADMusic* MABAsset = NewObject<USQEXSEADMusic>(InParent, Name, Flags);
+
+	//MABAsset->Platforms.Add(FName(TEXT("Windows")));
+	MABAsset->Header = FileInfo;
+
+	//MABAsset->Platform = "Windows";
+	//strlen(MABAsset->Platforms[0].ToString);
+
+	/*
+	MABAsset->Type.Lock(LOCK_READ_WRITE);
+	void* LockedDataStr = MABAsset->Type.Realloc(8);
+	FMemory::Memcpy(LockedDataStr, Buffer, 6);
+	MABAsset->Type.Unlock();
+	*/
+
+	MABAsset->bUnk = 1;
+	MABAsset->RawAudioData.Lock(LOCK_READ_WRITE);
+	void* LockedData = MABAsset->RawAudioData.Realloc(BufferEnd - Buffer);
+	FMemory::Memcpy(LockedData, Buffer, BufferEnd - Buffer);
+	MABAsset->RawAudioData.Unlock();
+
+
+	//SQEX Bypass
+
+
+	//MABAsset->bProcedural = true;
+
+
+	//MABAsset->bCanProcessAsync = true;
+	//MABAsset->bStreaming = true;
+
+
+	//MABAsset->DecompressionType = DTYPE_Procedural; //DTYPE_Procedural
+
+
+	//MABAsset->HasCompressedData = false;
+	//
+
+	MABAsset->AssetImportData->Update(CurrentFilename);
+	MABAsset->InvalidateCompressedData();
+
+	/*
+	FByteBulkData* BulkData = &MABAsset->CompressedFormatData.GetFormat(FName("None"));
+	BulkData->Lock(LOCK_READ_WRITE);
+	FMemory::Memmove(BulkData->Realloc(RawData.Num()), RawData.GetData(), RawData.Num());
+	BulkData->Unlock();
+	*/
+
+
+	//MABAsset->RawData.Lock(LOCK_READ_WRITE);
+	//void* LockedData = MABAsset->RawData.Realloc(BufferEnd - Buffer);
+	//FMemory::Memcpy(LockedData, Buffer, BufferEnd - Buffer);
+	//MABAsset->RawData.Unlock();
+
+	//RAW PCM DATA INFO
+	//MABAsset->RawPCMDataSize = FileInfo.SampleDataSize;
+	//MABAsset->RawPCMData = static_cast<uint8*>(FMemory::Malloc(BufferEnd - Buffer));
+	//FMemory::Memcpy(MABAsset->RawPCMData, Buffer, BufferEnd - Buffer);
+	//
+
+
+
+	//MABAsset->CompressedFormatData = *(reinterpret_cast<FFormatContainer*> (RawData.GetData()));
+
+	//int32 DurationDiv = *FileInfo.pChannels * *FileInfo.pBitsPerSample * *FileInfo.pSamplesPerSec;
+
+	/*MABAsset->DecompressionType = EDecompressionType::DTYPE_Procedural;
+	MABAsset->SoundGroup = ESoundGroup::SOUNDGROUP_Default;
+	MABAsset->NumChannels = *FileInfo.pChannels;
+	MABAsset->Duration = *FileInfo.pSabMabDataSize * 8.0f / DurationDiv;
+	MABAsset->RawPCMDataSize = FileInfo.SampleDataSize;
+	MABAsset->SampleRate = *FileInfo.pSamplesPerSec;
+	MABAsset->InvalidateCompressedData();*/
+
+	//MABAsset->RawData.Lock(LOCK_READ_WRITE);
+
+	//Entry.NoHcaHeaderSize = Entry.HcaStreamStartPosition - Entry.HeaderPosition;
+	//Entry.TrackEndPosition = Entry.HcaStreamStartPosition + Entry.HcaStreamSize;
+
+	//void* LockedData = MABAsset->RawData.Realloc(BufferEnd - Buffer);
+	//FMemory::Memcpy(LockedData, Buffer, BufferEnd - Buffer);
+
+	/*MABAsset->RawPCMData = (uint8*)FMemory::Malloc(BufferEnd - Buffer);
+	FMemory::Memcpy(MABAsset->RawPCMData, Buffer, BufferEnd - Buffer);*/
+
+	//MABAsset->RawData.Unlock();
+
+
+	/*if (DurationDiv)
+	{
+		//MABAsset->Duration = *FileInfo.pSabMabDataSize * 8.0f / DurationDiv;
+		MABAsset->Duration = (FileInfo.SampleDataSize * 8.0f / DurationDiv) * 10000;
+	}
+	else { MABAsset->Duration = 0.0f; }*/
+
+	//MABAsset->Duration = FileInfo.Entries[0].NoHcaHeaderSize / FileInfo.Entries[0].SampleRate;
+	MABAsset->Duration = 72.837563f;
+
+	//MABAsset->bLooping = FileInfo.Entries[0].IsLooping;
+	//MABAsset->SampleRate = FileInfo.Entries[0].SampleRate;
+	//MABAsset->NumChannels = FileInfo.Entries[0].ChannelCount;
+	MABAsset->Volume = 0.48;
+
+	FEditorDelegates::OnAssetPostImport.Broadcast(this, MABAsset);
+	for (int32 ComponentIndex = 0; ComponentIndex < ComponentsToRestart.Num(); ++ComponentIndex) { ComponentsToRestart[ComponentIndex]->Play(); }
+	return MABAsset;
 }

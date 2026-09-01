@@ -2,7 +2,7 @@
 	"TargetName" : "TresGameEditor",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "b3022ada-5df9-496e-b71f-38e4edce52c6",
+	"BuildId" : "d3b86abb-8b62-47a2-9fb1-89632ea45db2",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -582,6 +582,30 @@
 		},
 		{
 			"Path" : "$(EngineDir)/Plugins/Messaging/TcpMessaging/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-TcpMessaging.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/MovieScene/LevelSequenceEditor/Binaries/Win64/UE4Editor-LevelSequenceEditor.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/MovieScene/LevelSequenceEditor/Binaries/Win64/UE4Editor-LevelSequenceEditor.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/MovieScene/LevelSequenceEditor/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-LevelSequenceEditor.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/MovieScene/MatineeToLevelSequence/Binaries/Win64/UE4Editor-MatineeToLevelSequence.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/MovieScene/MatineeToLevelSequence/Binaries/Win64/UE4Editor-MatineeToLevelSequence.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/MovieScene/MatineeToLevelSequence/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-MatineeToLevelSequence.lib",
 			"Type" : "ImportLibrary"
 		},
 		{
@@ -4649,6 +4673,14 @@
 			"Type" : "RequiredResource"
 		},
 		{
+			"Path" : "$(EngineDir)/Plugins/MovieScene/LevelSequenceEditor/Binaries/Win64/UE4Editor.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/MovieScene/MatineeToLevelSequence/Binaries/Win64/UE4Editor.modules",
+			"Type" : "RequiredResource"
+		},
+		{
 			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystemNull/Binaries/Win64/UE4Editor.modules",
 			"Type" : "RequiredResource"
 		},
@@ -4837,6 +4869,14 @@
 		},
 		{
 			"Path" : "$(EngineDir)/Plugins/Messaging/TcpMessaging/TcpMessaging.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/MovieScene/LevelSequenceEditor/LevelSequenceEditor.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/MovieScene/MatineeToLevelSequence/MatineeToLevelSequence.uplugin",
 			"Type" : "UFS"
 		},
 		{
