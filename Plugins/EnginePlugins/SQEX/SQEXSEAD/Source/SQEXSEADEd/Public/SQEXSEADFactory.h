@@ -6,6 +6,7 @@
 #include "UnrealEd.h"
 #include "Factories/Factory.h"
 #include "SQEXSEADMusic.h"
+#include "SQEXSEADSound.h"
 #include "SQEXSEADFactory.generated.h"
 
 /**
